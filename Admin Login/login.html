@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Administration</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="home">
+    <a href="../Home/index.html"><img style="width: 70px; margin-bottom: -70px;" src="./pngegg (2).png" alt="home"></a>
+    <!-- <h3 style="text-align:center">Home</h3> -->
+  </div>
+  <div  class="wrapper">
+    <div class="title-text">
+      <div class="title login">Admin Login</div>
+
+    </div>
+    <div class="form-container">
+
+      <div class="form-inner">
+        <form action="admin_login_process.php" method="post" class="login">
+          <div class="field">
+            <input type="text" placeholder="Admin Name"  name="admin_name" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" name="admin_passwd" required>
+          </div>
+
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login">
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
+
+</body>
+
+</html>

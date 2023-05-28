@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="home">
+      <a href="../Home/index.html"><img style="width: 70px; margin-bottom: -10px;" src="./pngegg (2).png" alt="home"></a>
+      <!-- <h3 style="text-align:center">Home</h3> -->
+    </div>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">User Login</div>
+        <div class="title signup">User Sign Up</div>
+      </div>
+      <div class="form-container">
+        
+        <div class="warning" style="margin-top: 5px;">
+          Following Username Doesn't Exist Kindly Sign Up First !
+        </div>
+        <div class="form-inner">
+          <form action="user_login_process.php" class="login" method="post">
+            <div class="field">
+              <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" name="password" required>
+            </div>
+           
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a User ? <a href="../Sign Up/login.html"> Sign Up Now !</a></div>
+          </form>
+          <form action="user_signup_process.php" method="post" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Username" name="username"  required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" name="password"  required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" name="confPassword"  required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>

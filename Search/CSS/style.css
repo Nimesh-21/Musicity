@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background: rgb(74, 8, 110);
+    /* box-shadow: 5px 5px 30px rgba(46, 46, 46); */
+    z-index: 100;
+}
+
+.back {
+    background: rgba(0, 0, 0, 0.223) url('../IMG/hanny-naibaho-aWXVxy8BSzc-unsplash.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo h1 {
+    color: beige;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+.logo img {
+    width: 60px;
+    margin-left: 5px ;
+    
+    
+}
+
+.navlist {
+    display: flex;
+    margin: 0px 20px;
+
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    transition-duration: .3s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    padding: 10px 30px;
+    margin: 0px 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+
+}
+
+.navlist li a:hover {
+    color: rgb(53, 19, 63);
+    background-color: rgb(199, 199, 199);
+    border-radius: 20px;
+}
+
+
+
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(74, 8, 110);
+    color: white;
+}
+.welcome{
+    margin: 10px 0px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 0px;
+    padding-left: 20px;
+    background-color:rgb(242, 236, 227);
+    
+}
+big{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.allsongs{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.song img{
+    width: 180px;
+    border-radius: 15px;
+}
+.song{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: rgba(238, 235, 235, 0.838); */
+    background-color: rgb(241,243,244);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.songinfo{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 2px;
+}
+p{
+    font-family:cursive;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 2px;
+}
+h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 2px;
+}
+
+
